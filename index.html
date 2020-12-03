@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Medina</title>
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.min.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBn4nVQTl0zxatXX13c-wkB8VGekOGgkOc",
+        authDomain: "alberto-8122d.firebaseapp.com",
+        databaseURL: "https://alberto-8122d.firebaseio.com",
+        projectId: "alberto-8122d",
+        storageBucket: "alberto-8122d.appspot.com",
+        messagingSenderId: "976152179113",
+        appId: "1:976152179113:web:33b3c75e99d0133545d4b8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <!--colores-->
+    <aside class="engrane transicion">
+        <i class="fas fa-cog engrane__icono"></i>
+    </aside>
+    <article class="colores ">
+        <div class="colores__elige">
+            <p class="colores__texto">
+                Elige un color.
+            </p>
+        </div>
+        <div class="colores__container">
+            <div class="colores__amarillo"></div>
+            <div class="colores__celeste"></div>
+            <div class="colores__verde"></div>
+            <div class="colores__magenta"></div>
+        </div>
+    </article>
+
+    <!--header menu-->
+    <header>
+        <nav class="menu">
+            <div>
+                <a href="#inicio" class="menu__logo">AM</a>
+            </div>
+            <ul class="menu__contenedor">
+                <li class="menu__enlaces">
+                    <a href="#inicio" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__enlaces">
+                    <a href="#sobremi" class="menu__link">Sobre mí</a>
+                </li>
+                <li class="menu__enlaces">
+                    <a href="#habilidades" class="menu__link">Habilidades</a>
+                </li>
+                <li class="menu__enlaces">
+                    <a href="#portafolio" class="menu__link">Portafolio</a>
+                </li>
+                <li class="menu__enlaces">
+                    <a href="#contacto" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+            <div class="menu__burger">
+                <div class="menu__burgerLine1"></div>
+                <div class="menu__burgerLine2"></div>
+                <div class="menu__burgerLine3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!--inicio-->
+    <section id="inicio" class="top">
+        <div class="top__datos">
+            <h1 class="top__nombre">Soy Alberto Medina</h1>
+            <p class="top__programador">
+                Programador Web Front-end
+            </p>
+        </div>
+        <div class="top__ilustracion">
+            <img class="top__img" src="images/bg.png" alt="">
+        </div>
+    </section>
+
+    <!--main-->
+    <main class="contenido">
+        <!--sobre mi-->
+        <section id="sobremi" class="contenido__about">
+            <div class="about__container">
+                <div class="about__containerme">
+                    <h2 class="about__me">Sobre mí</h2>
+                </div>
+                <article class="about__containertxt">
+                    <p class="about__texto">
+                        Me encanta programar y aprender nuevas tecnologías, todo de manera casi 100% autodidacta, 
+                        aunque mi enfoque es en la parte del Front-end, nunca paro de aprender 
+                        por lo que de a poco e ido avanzando hacia el lado del Back-end, aprendiendo gestores 
+                        de bases de datos como Mongo DB y SQL Server, además de crear APIs con Node Js.
+                        <br> 
+                        <br> 
+                        Otros de mis pasatiempos son el Cine, los E-Sports, el Futbol Americano y lo más importante
+                        para mí, convivir con mi novia y mi familia.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!--habilidades-->
+        <section id="habilidades" class="contenido__habilidades">
+            <div class="habilidades__container">
+                <div class="habilidades__contitle">
+                    <h2 class="habilidades__titulo">Habilidades</h2>
+                </div>
+                <article class="habilidades__maquetacion">
+                    <div class="habilidades__bgMaqueta">
+                        <div class="habilidades__icono">
+                            <i class="fas fa-laptop-code icono"></i>
+                        </div>
+                        <div class="habilidades__habilidad">
+                            <h2 class="habilidades__habilNombre">Maquetación</h2>
+                        </div>
+                        <div class="habilidad__descripcion">
+                            <p>
+                                Llevo un diseño previamente hecho, a código con HTML y CSS.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="habilidades__frontend">
+                    <div class="habilidades__bgFront">
+                        <div class="habilidades__icono">
+                            <i class="fas fa-code icono"></i>
+                        </div>
+                        <div class="habilidades__habilidad">
+                            <h2 class="habilidades__habilNombre">Front-end</h2>
+                        </div>
+                        <div class="habilidad__descripcion">
+                            <p>
+                                Consumo de APIs mediante peticiones AJAX, manejo de Frameworks y librerías como Angular y React.
+                            </p>
+                        </div>
+                    </div>    
+                </article>
+
+                <article class="habilidades__api">
+                    <div class="habilidades__bgApi">
+                        <div class="habilidades__icono">
+                            <i class="fas fa-cogs icono"></i>
+                        </div>
+                        <div class="habilidades__habilidad">
+                            <h2 class="habilidades__habilNombre">APIs Rest</h2>
+                        </div>
+                        <div class="habilidad__descripcion">
+                            <p>
+                                Puedo crear APIs y conexiones a bases de datos (Mongo DB) con NodeJs.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--portafolio-->
+        <section id="portafolio" class="contenido__portafolio">
+            <div class="portafolio__container">
+                <div class="portafolio__portafolio">
+                    <h2 class="portafolio__h2">Portafolio</h2>
+                </div>
+                
+                <article class="portafolio__netflix">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Red Social de imagenes, basada en "Imgur" <br>
+                                Front-end y Back-end, hechos por mi. <br>
+                                Usa servicios como Mongo DB Atlas y Cloudinary <br>
+                                para almacenar imagenes, comentarios, conteo de likes, <br>
+                                conteo de comentarios, etc. <br>
+                                <a class="portafolio__enlacesA" href="https://red-social-rs.herokuapp.com/" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/red-social.png" alt="">
+                    
+                </article>
+
+                <article class="portafolio__libros">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Consume la API Pública de <br>
+                                "Open Libra". <br> 
+                                <a class="portafolio__enlacesA" href="https://albert-web-dev.github.io/pagina-libros/" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/libreria.jpg" alt="">
+                </article>
+
+                <article class="portafolio__clima">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Consume la API Pública de <br>
+                                "OpenWeather", fue construida 100% con React Js. <br> 
+                                <a class="portafolio__enlacesA" href="https://clima-app-b7142.web.app/" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/clima.png" alt="">
+                </article>
+
+                <article class="portafolio__redsocial">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Consume la API Pública de <br>
+                                "The Movie Database". <br> 
+                                <a class="portafolio__enlacesA" href="https://albert-web-dev.github.io/app-peliculas/" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/netflix.png" alt="">
+                </article>
+
+                <article class="portafolio__pagina">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Página Web completa. <br> 
+                                <a class="portafolio__enlacesA" href="https://albert-web-dev.github.io/web1/" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/pagina1.png" alt="">
+                </article>
+
+                <!--<article class="portafolio__riot">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Consume la API Pública de <br>
+                                "Riot Games". <br> 
+                                <a class="portafolio__enlacesA" href="" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/portfolio3.jpeg" alt="">
+                </article>
+
+                <article class="portafolio__youtube">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Réplica de Youtube <br>
+                                Usando React JS. <br> 
+                                <a class="portafolio__enlacesA" href="" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/portfolio.jpeg" alt="">
+                </article>-->
+
+                <article class="portafolio__pagina2">
+                    <div class="portafolio__imgContainer">
+                        <div class="portafolio__informacion">
+                            <p>
+                                Pagina Web completa
+                                <a class="portafolio__enlacesA" href="https://albert-web-dev.github.io/pagina/" target="_blank">Ir.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="portafo__imagen" src="images/arquitectura.png" alt="">
+                </article>
+            </div>
+        </section>
+
+        <!--contacto-->
+        <section id="contacto" class="contenido__contacto">
+            <div class="contacto__container">
+                <div class="contacto__msn">
+                    <h3 class="contacto__titulo">Envíame un Mensaje</h3>
+                </div>
+                <form class="contacto__form" action="submit">
+                    <div class="contacto__nombre">
+                        <input type="text" placeholder="Nombre" id="name">
+                    </div>
+                    <div class="contacto__email">
+                        <input type="text" placeholder="Email" id="email">
+                    </div>
+                    <div class="contacto__mensaje">
+                        <textarea placeholder="Mensaje" id="message" name="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="contacto__enviar">
+                        <input class="enviar__enviar" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__container">
+            <article class="footer__yo">
+                <div class="footer__info">
+                    <i class="fas fa-map-marker-alt footer__iconos"> Ensenada, Baja California, México.</i> 
+                </div>
+                <p class="footer__sigueme">
+                    Sigueme.
+                </p>
+                <div class="footer__followMe">
+                    <div class="footer__icono">
+                        <a href="https://www.facebook.com/OWAlbertCobain/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square footer__iconos"></i></a>    
+                    </div>
+                    <div class="footer__icono">
+                        <a href="https://twitter.com/MobAlbertoM" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square footer__iconos"></i></a>
+                    </div>
+                    <div class="footer__icono">
+                        <a href="https://www.instagram.com/albert.cobain/" target="_blank"><i class="fab fa-instagram-square footer__iconos"></i></a>    
+                    </div>
+                    <div class="footer__icono">
+                        <a href="https://github.com/albert-web-dev" target="_blank"><i class="fab fa-github-square footer__iconos"></i></a>    
+                    </div>
+                </div>
+            </article>
+ 
+            <article class="footer__ilustracion">
+                <p class="footer__nameilustrador">
+                    La ilustración del inicio fue hecha por Illustration <br>
+                    <a class="footer__link" href="https://iconscout.com/illustrations/blog-writer" target="_blank">Blog writer Illustration</a> by <a class="footer__link" href="https://iconscout.com/contributors/delesign" target="_blank">Delesign Graphics</a>
+                </p>
+            </article>
+        </div>
+    </footer>
+</body>
+</html>
